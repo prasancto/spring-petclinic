@@ -19,7 +19,6 @@ pipeline {
             sh 'scp target/*.jar jenkins@10.150.231.6:/pkg/pet/'
             sh "ssh jenkins@10.150.231.6 'nohup java -jar /opt/pet/spring-petclinic-1.5.1.jar &'"
           }
-        }
+       }
     }
   }
-}
